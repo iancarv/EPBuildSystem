@@ -1,4 +1,4 @@
-from teste import Teste, FalhouNoTeste
+from testes.teste import Teste, FalhouNoTeste
 
 
 class Tester(object):
@@ -16,6 +16,3 @@ class Tester(object):
 				return False
 		print('O teste passou com sucesso!')
 		return True
-
-tester = Tester()
-tester.test()
