@@ -9,7 +9,8 @@ def zipdir(path, zip):
         for file in files:
             zip.write(os.path.join(root, file))
 
-tester = Tester()
-if tester.test():
-	zip_name = zipfile.ZipFile(settings.dest, 'w')
-	zipdir(settings.dir, zip_name)
+if __name__ == "__main__":
+    tester = Tester()
+    if tester.test():
+	    zip_name = zipfile.ZipFile(settings.dest, 'w')
+	    zipdir(settings.dir, zip_name)
