@@ -5,7 +5,9 @@ class Teste(object):
 	"Classe que representa um teste generico"
 
 	def run(self):
-		if self.entrada_esperada != self.saida_esperada:
+		if self.entrada_esperada == self.saida_esperada:
+			return True
+		else:
 			raise FalhouNoTeste
 
 	def entrada_esperada(self):
