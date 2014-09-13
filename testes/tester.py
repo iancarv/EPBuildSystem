@@ -1,4 +1,4 @@
-from teste.teste import Teste, FalhouNoTeste
+from teste import Teste, FalhouNoTeste
 
 
 class Tester(object):
@@ -7,7 +7,7 @@ class Tester(object):
 		teste = Teste()
 		self.testes = [teste]
 
-	def teste(self):
+	def test(self):
 		for teste in self.testes:
 			try:
 				teste.run()
@@ -18,4 +18,4 @@ class Tester(object):
 		return True
 
 tester = Tester()
-teste
+tester.test()
